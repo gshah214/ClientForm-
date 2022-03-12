@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Client Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Client Database</h1>
+    </header>
+    <form action="/add" method="POST">
+        <fieldset>
+            <h3>Add New Client</h3>
+            <label>Client Name</label>
+            <input type="text" id='name' name="name" required>
+            <br><br>
+            <label>Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+            <br><br>
+            <label>Email Address</label>
+            <input type="text" id="email" name="email" required>
+            <br><br>
+            <label>Min. Sq. Foot</label>
+            <input type="text" id="sqfoot" name="sqfoot" required>
+            <br><br>
+            <label># of Bedrooms</label>
+            <input type="text" id="bedrooms" name="bedrooms" required>
+            <br><br>
+            <label># of Bathrooms</label>
+            <input type="text" id="bathrooms" name="bathrooms" required>
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form action="/view" method="POST">
+        <fieldset>
+            <h3>View A Client</h3>
+            <label>Client Name</label>
+            <input type="text" id='name' name="name" required>
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form action="/update" method="POST">
+        <fieldset>
+            <h3>Update A Client</h3>
+            <label>Client Name</label>
+            <input type="text" id='name' name="name" required>
+            <br><br>
+            <label>Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+            <br><br>
+            <label>Email Address</label>
+            <input type="text" id="email" name="email" required>
+            <br><br>
+            <label>Min. Sq. Foot</label>
+            <input type="text" id="sqfoot" name="sqfoot" required>
+            <br><br>
+            <label># of Bedrooms</label>
+            <input type="text" id="bedrooms" name="bedrooms" required>
+            <br><br>
+            <label># of Bathrooms</label>
+            <input type="text" id="bathrooms" name="bathrooms" required>
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form action="/delete" method="POST">
+        <fieldset>
+            <h3>Delete A Client</h3>
+            <label>Client Name</label>
+            <input type="text" id='name' name="name" required>
+            <br><br>
+            <label>Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+            <br><br>
+            <label>Email Address</label>
+            <input type="text" id="email" name="email" required>
+            <br><br>
+            <label>Min. Sq. Foot</label>
+            <input type="text" id="sqfoot" name="sqfoot" required>
+            <br><br>
+            <label># of Bedrooms</label>
+            <input type="text" id="bedrooms" name="bedrooms" required>
+            <br><br>
+            <label># of Bathrooms</label>
+            <input type="text" id="bathrooms" name="bathrooms" required>
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <hr>
+        <h4>Please enter 'http://localhost:3000/close' to close the database connection before closing this window</h4>
+    </footer>
+
+</body>
+
+</html>
