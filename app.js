@@ -1,4 +1,4 @@
-var sqlite3 = require('sqlite3').verbose();
+const sqlite3 = require('sqlite3').verbose();
 var express = require('express');
 var http = require('http');
 var path = require("path");
@@ -17,7 +17,7 @@ const limiter = rateLimit({
 server.listen(3000,function(){ 
     console.log("Server listening on port: 3000");
 })
-var db = new sqlite3.Database('./database/clients.db');
+var db = new sqlite3.Database(':memory:');
 
 
 app.use(bodyParser.urlencoded({extended: false}));

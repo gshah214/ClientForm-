@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  nodeproj:
+    image: "node:latest"
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ../ClientForm-:/home/node/app
+    environment:
+      - NODE_ENV=production
+    expose:
+      - "8081"
+    command: bash -c "npm rebuild && npm install --save sqlite3 && npm start && node app.js"
+
+    
