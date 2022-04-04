@@ -16,7 +16,7 @@
 
     <div class="row">
         <div class="column">
-            <form action="/add" method="POST">
+            <form>
                 <fieldset>
                     <h3>Add New Client</h3>
                     <label>Client Name</label>
@@ -37,9 +37,10 @@
                     <label># of Bathrooms</label>
                     <input type="text" id="bathrooms" name="bathrooms" required>
                     <br><br>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Submit</button>
-                </fieldset>
+                    <!-- <button type="reset">Reset</button> -->
+                    <!-- <button type="submit">Submit</button> -->
+                    <input type="button" value="Create Client" onclick="processData(this.form)">
+                <!-- </fieldset> -->
             </form>
         </div>
         <div class="column">
