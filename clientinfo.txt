@@ -1,1 +1,1 @@
- , Phone = 123123123 , Email = todd@yahoo.com , Sq. Footage = 3500 , Bedrooms = 4 , Bathrooms = 5
+New client has been added into the database with Name = anthony , Phone = 1234560987 , Email = anthony@email.com , Sq. Footage = 2500 , Bedrooms = 5 , Bathrooms = 5
